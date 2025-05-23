@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>Echipament Moto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Echipament Moto</h1>
+        <nav class="navbar">
+                 <a href="index.html" class="nav-btn">Acasă</a>
+                 <a href="echipament.html" class="nav-btn">Echipament</a>
+                 <a href="tipuri.html" class="nav-btn">Tipuri</a>
+                 <a href="galerie.html" class="nav-btn">Galerie</a>
+                 <a href="contact.html" class="nav-btn">Contact</a>
+            </nav>
+    </header>
+
+    <main>
+    <h2>Echipamentul necesar unui motociclist:</h2>
+    <ul class="lista-echip">
+        <li onclick="toggleDetalii('casca')">
+            Cască
+            <img src="casca hjc.jpeg" alt="Cască moto">
+            <div class="detalii" id="casca">
+            Cască integrală, omologare ECE 22.06, ventilată, protecție maxilar.
+            </div>
+        </li>
+        <li onclick="toggleDetalii('manusi')">
+            Mănuși
+            <img src="MANUSI.webp" alt="Mănuși moto">
+            <div class="detalii" id="manusi"> Mănuși din piele cu protecții dure, ventilație bună, aderență crescută.
+            </div>
+        </li>
+        <li onclick="toggleDetalii('geaca')">
+            Geacă
+            <img src="geaca.jpg" alt="Geacă moto">
+            <div class="detalii" id="geaca">Geacă textilă sau din piele, cu protecții integrate la umeri, coate și spate. Ventilație, impermeabilă, și inserții reflectorizante.
+            </div>  
+        </li>
+        <li onclick="toggleDetalii('pantaloni')">
+            Pantaloni 
+            <img src="pantaloni.jpeg" alt="Pantaloni moto">
+            <div class="detalii" id="pantaloni">
+                Pantaloni textil cu protecții pe genunchi, șold și materiale rezistente la abraziune.
+            </div>
+        </li>
+        <li onclick="toggleDetalii('ghete')">
+            Ghete
+            <img src="ghete.jpg" alt="Geacă moto">
+            <div class="detalii" id="ghete"> Ghete din piele întărită, protecție la gleznă și talpă anti-alunecare.
+            </div>
+        </li>
+    </ul>
+    </main>
+    <script src="script.js"></script>
+
+</body>
+</html>

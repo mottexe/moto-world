@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ro">
+    <head>
+        <meta charset="UTF-8">
+        <title>Tipuri de motociclete</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <header>
+            <h1>Tipuri de motociclete</h1>
+            <nav class="navbar">
+                 <a href="index.html" class="nav-btn">Acasă</a>
+                 <a href="echipament.html" class="nav-btn">Echipament</a>
+                 <a href="tipuri.html" class="nav-btn">Tipuri</a>
+                 <a href="galerie.html" class="nav-btn">Galerie</a>
+                 <a href="contact.html" class="nav-btn">Contact</a>
+            </nav>
+        </header>
+
+        <main>
+            <h2>Click pe un tip de motocicletă:</h2>
+
+        <div class="tipuri-moto">
+            <button onclick="showDetalii('sport')">Sport</button>
+            <button onclick="showDetalii('touring')">Touring</button>
+            <button onclick="showDetalii('naked')">Naked</button>
+            <button onclick="showDetalii('adventure')">Adventure</button>
+            <button onclick="showDetalii('cruiser')">Cruiser</button>
+        </div>
+
+        
+        <div class="popup" id="sport">
+            <span class="close" onclick="hideDetalii('sport')">X</span>
+            <h3>Motociclete Sport</h3>
+            <p>Gândite pentru viteză și performanță. Au o poziție de condus agresivă și carenaje aerodinamice. Nu sunt ideale pentru confort, dar oferă senzații tari pe asfalt.</p>
+        </div>
+
+        <div class="popup" id="touring">
+            <span class="close" onclick="hideDetalii('touring')">X</span>
+            <h3>Motociclete Touring</h3>
+            <p>Concepute pentru drumuri lungi, au scaune confortabile, protecție la vânt și spațiu pentru bagaje. Grele, dar excelente pentru aventuri mari.</p>
+        </div>
+
+        <div class="popup" id="naked">
+            <span class="close" onclick="hideDetalii('naked')">X</span>
+            <h3>Motociclete Naked</h3>
+            <p>Design simplu și fără carene. Mai ușor de manevrat în oraș, sunt perfecte pentru începători și pentru un look agresiv dar curat.</p>
+        </div>
+
+        <div class="popup" id="adventure">
+            <span class="close" onclick="hideDetalii('adventure')">X</span>
+            <h3>Motociclete Adventure</h3>
+            <p>Versatile, pentru off-road și asfalt. Au suspensii lungi și garda la sol mare. Ideale pentru trasee montane, păduri sau drumuri neasfaltate.</p>
+        </div>
+
+        <div class="popup" id="cruiser">
+            <span class="close" onclick="hideDetalii('cruiser')">X</span>
+            <h3>Motociclete Cruiser</h3>
+            <p>Stil relaxat, sunet grav și poziție joasă. Inspirate de stilul american (Harley-Davidson), sunt făcute pentru plimbări chill, cu atitudine.</p>
+        </div>
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>
